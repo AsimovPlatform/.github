@@ -1,0 +1,39 @@
+# See: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+---
+name: Request a feature 💡
+description: |
+  Suggest a new enhancement idea for this project
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your valuable contribution to ASIMOV!
+
+        *This issue tracker is **not** for support questions. If you are looking for community support, please ask your question on [Stack Overflow].*
+
+        [Stack Overflow]: https://stackoverflow.com/questions/tagged/asimov?sort=frequent
+
+  - type: textarea
+    attributes:
+      label: Use case
+      description: |
+        Please tell us the problem you are running into that led to you wanting
+        a new feature.
+
+        Is your feature request related to a problem? Kindly give a clear and
+        concise description of what the problem is.
+
+        Please make sure to describe any alternative solutions you've considered.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Proposal
+      description: |
+        Kindly briefly but precisely describe what you would like to be able to do.
+
+        Consider attaching something to clarify what you are imagining, such as
+        code examples, annotated screenshots, or a concept mockup.
+    validations:
+      required: true

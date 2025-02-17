@@ -1,0 +1,7 @@
+# See: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+---
+blank_issues_enabled: true
+contact_links:
+  - name: Request help with this project ❓
+    url: https://stackoverflow.com/questions/tagged/asimov?sort=frequent
+    about: Ask a support question about this project on Stack Overflow

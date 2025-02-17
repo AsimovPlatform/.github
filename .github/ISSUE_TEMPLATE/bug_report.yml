@@ -1,0 +1,62 @@
+# See: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+---
+name: Report a bug 🐞
+description: |
+  Describe a problem you have encountered with this project
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your valuable contribution to ASIMOV!
+
+        *This issue tracker is **not** for support questions. If you are looking for community support, please ask your question on [Stack Overflow].*
+
+        [Stack Overflow]: https://stackoverflow.com/questions/tagged/asimov?sort=frequent
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please ensure you have completed all of the following.
+      options:
+        - label: I have read and understood the [contribution guidelines](https://github.com/asimov-platform/.github/blob/master/.github/contributing.md).
+          required: true
+        - label: I have searched the [existing issues](../issues) for this problem, without success.
+          required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: |
+        Please tell us exactly how to reproduce the problem you are running into.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-results
+    attributes:
+      label: Expected results
+      description: Please tell us what you expected to observe.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-results
+    attributes:
+      label: Actual results
+      description: Please tell us what you unexpectedly observed instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: system-configuration
+    attributes:
+      label: System configuration
+      description: Please tell us about your environment and configuration.
+    validations:
+      required: true
